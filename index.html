@@ -77,13 +77,18 @@
 							<header style="text-align:center">
 								<h2>文章</h2>
 							</header>
-
-							<h3>计算机组成原理</h3>
-							<a href = "/artical/pcc/pipeline_CPU">利用Logisim搭建五级流水线CPU</a>
-
-							<h3>算法与数据结构</h3>
-							<a href = "/artical/algorithm/Boyer–Moore_majority_vote">摩尔投票法</a>
-
+							<div class="content">
+								<h3>计算机组成原理</h3><a href="javascript:;" onclick=show_hide("artical_spread1","artical_spread_button1") id="artical_spread_button1">展开</a>
+								<div id="artical_spread1" style="display: none">
+									<a href = "/artical/pcc/pipeline_CPU">利用Logisim搭建五级流水线CPU</a>
+								</div>
+							</div>
+							<div class="content">
+								<h3>算法与数据结构</h3><a href="javascript:;" onclick=show_hide("artical_spread2","artical_spread_button2") id="artical_spread_button12">展开</a>
+								<div id="artical_spread2" style="display: none">
+									<a href = "/artical/algorithm/Boyer–Moore_majority_vote">摩尔投票法</a>
+								</div>
+							</div>
 
 						</div>
 					</section>
@@ -97,33 +102,52 @@
 						</header>
 
 						<p>分享一些学习cs知识的网站或者有意思的小工具，大家可以参考~
-
-						<h3>正则表达式</h3>
-						<p style="margin:0 auto"><a href = "https://regexone.com/">
-							RegxOne:Learn Regular Expressions with simple, interactive exercises.
-						</a></p>
-						<p><a href = "https://deerchao.cn/tutorials/regex/regex.htm">
-							正则表达式30分钟入门教程
-						</a></p>
-						<h3>汇编语言（MIPS）</h3>
-						<p><a href = "https://www.cnblogs.com/thoupin/p/4018455.html">
-							【十分钟教会你汇编】MIPS编程入门（妈妈说标题要高大上，才会有人看>_<！）
-						</a></p>
-						<h3>前端三件套</h3>
-						<p><a href = "https://www.studytonight.com/code/">
-							StudyTonight:Learn Coding by doing!
-						</a></p>
-						<h3>小工具</h3>
-						<h4>修改键位映射</h4>
-						<p style="margin:0 auto"><a href="https://www.randyrants.com/category/sharpkeys/">
-							SharpKeys
-						</a></p>
-						<p><a href="https://www.autohotkey.com/">
-							AutoHotKey
-						</a></p>
-
-
+						<div class="content">
+							<h3>正则表达式</h3>
+							<a href="javascript:;" onclick=show_hide("resource_spread1","resource_spread_button1") id="resource_spread_button1">展开</a>
+							<div id="resource_spread1" style="display: none">
+								<p style="margin:0 auto"><a href = "https://regexone.com/">
+									RegxOne:Learn Regular Expressions with simple, interactive exercises.
+								</a></p>
+								<p><a href = "https://deerchao.cn/tutorials/regex/regex.htm">
+									正则表达式30分钟入门教程
+								</a></p>
+							</div>
+						</div>
+						<div class="content">
+							<h3>汇编语言（MIPS）</h3>
+							<a href="javascript:;" onclick=show_hide("resource_spread2","resource_spread_button2") id="resource_spread_button2">展开</a>
+							<div id="resource_spread2" style="display: none">
+								<p><a href = "https://www.cnblogs.com/thoupin/p/4018455.html">
+									【十分钟教会你汇编】MIPS编程入门（妈妈说标题要高大上，才会有人看>_<！）
+								</a></p>
+							</div>
+						</div>
+						<div class="content">
+							<h3>前端三件套</h3>
+							<a href="javascript:;" onclick=show_hide("resource_spread3","resource_spread_button3") id="resource_spread_button3">展开</a>
+							<div id="resource_spread3" style="display: none">
+								<p><a href = "https://www.studytonight.com/code/">
+									StudyTonight:Learn Coding by doing!
+								</a></p>
+							</div>
+						</div>
+						<div class="content">
+							<h3>工具</h3>
+							<a href="javascript:;" onclick=show_hide("resource_spread4","resource_spread_button4") id="resource_spread_button4">展开</a>
+							<div id="resource_spread4" style="display: none">
+								<h4><a href="https://missing.csail.mit.edu/">The Missing Semester of Your CS Education</a></h4>
+								<h4>修改键位映射</h4>
+								<p style="margin:0 auto"><a href="https://www.randyrants.com/category/sharpkeys/">
+									SharpKeys
+								</a></p>
+								<p><a href="https://www.autohotkey.com/">
+									AutoHotKey
+								</a></p>
+							</div>
+						</div>
 					</div>
+
 				</section>
 				<!-- About Me -->
 					<section id="about" class="four">
@@ -158,7 +182,7 @@
 									<div class="col-12">
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
-									<div class="col-12">
+									<div class="col-12" style="text-align: center">
 										<input type="submit" value="Send Message" />
 									</div>
 								</div>
@@ -187,6 +211,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

@@ -2210,6 +2210,12 @@ input, select, textarea {
 	#top {
 		text-align: center;
 	}
+	#resource h3{
+		display: inline;
+	}
+	#portfolio h3{
+		display: inline;
+	}
 
 #main > section {
 			margin: 0;

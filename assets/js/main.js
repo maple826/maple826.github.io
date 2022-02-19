@@ -121,3 +121,16 @@
 				});
 
 })(jQuery);
+
+function show_hide(spread_id,button_id){
+	var btn = document.getElementById(button_id);
+	var content = document.getElementById(spread_id);
+	if(content.style.display === "block") {
+		content.style.display = "none";
+		btn.innerHTML="展开";
+	}
+	else {
+		content.style.display = "block";
+		btn.innerHTML="收起";
+	}
+}
