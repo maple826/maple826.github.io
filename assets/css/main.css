@@ -2216,6 +2216,9 @@ input, select, textarea {
 	#portfolio h3{
 		display: inline;
 	}
+	#portfolio h4{
+		display: inline;
+	}
 
 #main > section {
 			margin: 0;
