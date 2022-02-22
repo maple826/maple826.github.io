@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+<html>
+<head>
+	<title>Prologue by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../../assets/css/main.css" />
+	<link rel="stylesheet" href="../../../assets/css/markdown.css" />
+</head>
+<body class="is-preload">
+
+<!-- Header -->
+<div id="header">
+
+	<div class="top">
+
+		<!-- Logo -->
+		<div id="logo">
+			<span class="image avatar48"><img src="../../../images/head_portrait.jpg" alt="" /></span>
+			<h1 id="title">Maple</h1>
+		</div>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="https://maple826.github.io/#portfolio" id="portfolio-link"><span class="icon solid fa-th">文章</span></a></li>
+				<li><a href="https://maple826.github.io/#about" id="about-link"><span class="icon solid fa-user">关于我</span></a></li>
+				<li><a href="https://maple826.github.io/#contact" id="contact-link"><span class="icon solid fa-envelope">反馈</span></a></li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<div class="bottom">
+
+		<!-- Social Icons -->
+		<ul class="icons">
+			<li><a href="https://github.com/maple826" class="icon brands fa-github"><span class="label">Github</span></a></li>
+			<li><a href="mailto:zhangyichi0826@qq.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+
+	</div>
+
+</div>
+
+<!-- Main -->
+<div id="main">
+
+	<!-- Portfolio -->
+	<section id="portfolio" class="two">
+		<div class="container">
+
+			<article class="markdown-body">
+				<h1 class="atx" id="并查集01背包">并查集+01背包</h1>
+				<h2 class="atx" id="题目">题目</h2>
+				<h3 class="atx" id="题目描述">题目描述</h3>
+				<p>Joe觉得云朵很美，决定去山上的商店买一些云朵。</p>
+				<p>商店里有&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span>&nbsp;朵云，云朵被编号为&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span></span></span></span> , <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">2</span></span></span></span> ,…, <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span> ，并且每朵云都有一个价值。</p>
+				<p>但是商店老板跟他说，一些云朵要搭配来买才好，所以买一朵云则与这朵云有搭配的云都要买。</p>
+				<p>但是Joe的钱有限，所以他希望买的价值越多越好。</p>
+				<h3 class="atx" id="输入格式">输入格式</h3>
+				<p>第&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span></span></span></span>&nbsp;行包含三个整数&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span> ，<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">m</span></span></span></span> ，<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02691em;" class="mord mathnormal">w</span></span></span></span> ，表示有&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span>&nbsp;朵云，<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">m</span></span></span></span>&nbsp;个搭配，Joe有&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02691em;" class="mord mathnormal">w</span></span></span></span>&nbsp;的钱。</p>
+				<p>第&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">2</span></span></span></span> ∼ <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.66666em;vertical-align:-0.08333em;" class="strut"></span><span class="mord mathnormal">n</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">+</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span></span></span></span> 行，每行两个整数&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.58056em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span></span></span></span> ，<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.69444em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span></span></span></span>&nbsp;表示&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.65952em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">i</span></span></span></span>&nbsp;朵云的价钱和价值。</p>
+				<p>第&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.66666em;vertical-align:-0.08333em;" class="strut"></span><span class="mord mathnormal">n</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">+</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">2</span></span></span></span> ∼ <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.66666em;vertical-align:-0.08333em;" class="strut"></span><span class="mord mathnormal">n</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">+</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.72777em;vertical-align:-0.08333em;" class="strut"></span><span class="mord">1</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">+</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">m</span></span></span></span>&nbsp;行，每行两个整数&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.58056em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.58056em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span style="margin-right:0.03588em;" class="mord mathnormal">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span></span></span></span>，表示买&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.58056em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span></span></span></span>&nbsp;就必须买&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.58056em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span style="margin-right:0.03588em;" class="mord mathnormal">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span></span></span></span>，同理，如果买&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.58056em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span style="margin-right:0.03588em;" class="mord mathnormal">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span></span></span></span>&nbsp;就必须买&nbsp;<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.58056em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span></span></span></span> 。</p>
+				<h3 class="atx" id="输出格式">输出格式</h3>
+				<p>一行，表示可以获得的最大价值。</p>
+				<h3 class="atx" id="数据范围">数据范围</h3>
+				<p><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">1</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.7719400000000001em;vertical-align:-0.13597em;" class="strut"></span><span class="mord mathnormal">n</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span> ,<br><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">0</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.7719400000000001em;vertical-align:-0.13597em;" class="strut"></span><span class="mord mathnormal">m</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">5</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span> ,<br><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">1</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.7719400000000001em;vertical-align:-0.13597em;" class="strut"></span><span style="margin-right:0.02691em;" class="mord mathnormal">w</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span> ,<br><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">1</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.7859700000000001em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">5</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span> ,<br><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">1</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.84444em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span> ,<br><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">1</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.8304100000000001em;vertical-align:-0.19444em;" class="strut"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span><span class="mpunct">,</span><span style="margin-right:0.16666666666666666em;" class="mspace"></span><span class="mord"><span style="margin-right:0.03588em;" class="mord mathnormal">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span></p>
+				<h3 class="atx" id="输入样例">输入样例</h3>
+				<pre><code class="fenced-code-block language-cpp"><span class="token number">5</span> <span class="token number">3</span> <span class="token number">10</span>
+<span class="token number">3</span> <span class="token number">10</span>
+<span class="token number">3</span> <span class="token number">10</span>
+<span class="token number">3</span> <span class="token number">10</span>
+<span class="token number">5</span> <span class="token number">100</span>
+<span class="token number">10</span> <span class="token number">1</span>
+<span class="token number">1</span> <span class="token number">3</span>
+<span class="token number">3</span> <span class="token number">2</span>
+<span class="token number">4</span> <span class="token number">2</span></code></pre>
+				<h3 class="atx" id="输出样例：">输出样例：</h3>
+				<pre><code class="fenced-code-block language-cpp"><span class="token number">1</span></code></pre>
+				<h2 class="atx" id="算法分析">算法分析</h2>
+				<ul>
+					<li>一些云朵要搭配来买才好，所以买一朵云则与这朵云有搭配的云都要买。</li>
+				</ul>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这句话提醒了我们要用并查集处理：<strong>不同的云处于不同的集合当中</strong>。</p>
+				<ul>
+					<li>一个集合中选取一部分，期望取得最大权重，显然选用背包DP。</li>
+				</ul>
+				<h2 class="atx" id="代码实例">代码实例</h2>
+				<pre><code class="fenced-code-block language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstring&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;algorithm&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">10010</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>c<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>d<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>x <span class="token operator">!=</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">,</span>w<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m <span class="token operator">&gt;&gt;</span> w<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>c<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>d<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
+        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span>y <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>x <span class="token operator">!=</span> y<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span>
+            d<span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">+=</span> d<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            c<span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">+=</span> c<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">!=</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> w<span class="token punctuation">;</span>j <span class="token operator">&gt;=</span> c<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>j<span class="token operator">--</span><span class="token punctuation">)</span> f<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>f<span class="token punctuation">[</span>j <span class="token operator">-</span> c<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">+</span> d<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>w<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+			</article>
+
+		</div>
+	</section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+	<!-- Copyright -->
+	<ul class="copyright">
+		<li>&copy; <a href = "https://github.com/maple826">maple826</a> All rights reserved.</li><li>Powered by <a href="https://github.com/maple826/maple826.github.io">maple826's blog</a></li>
+	</ul>
+
+</div>
+
+<!-- Scripts -->
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/jquery.scrolly.min.js"></script>
+<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../../assets/js/browser.min.js"></script>
+<script src="../../../assets/js/breakpoints.min.js"></script>
+<script src="../../../assets/js/util.js"></script>
+<script src="../../../assets/js/main.js"></script>
+
+</body>
+</html>
