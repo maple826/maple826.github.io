@@ -67,6 +67,7 @@
                     <p>给定一个长度为 <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.68333em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.10903em;" class="mord mathnormal">N</span></span></span></span> 的数列，求数值严格单调递增的子序列的长度最长是多少。</p>
                     <p>子序列&nbsp;是由数组派生而来的序列，删除（或不删除）数组中的元素而不改变其余元素的顺序。例如，<code>[3,6,2,7]</code> 是数组 <code>[0,3,1,6,2,2,7]</code> 的子序列，而 <code>[0,1,2,7]</code>是原数组的最长上升子序列，长度为4。</p>
                     <h3 class="atx" id="dp思路">DP思路</h3>
+                    <p></p>
                     <h4 class="atx" id="状态表示">状态表示</h4>
                     <p>我们用 <code>f[i]</code> 表示以 <code>nums[i]</code> 结尾的上升子序列的最大长度 ，显然 <code>max(f[1 ~ n])</code> 即为所求（数组下标从<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span></span></span></span>开始，长度为<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span>）</p>
                     <h4 class="atx" id="状态计算">状态计算</h4>
@@ -111,6 +112,7 @@
 <span class="token punctuation">}</span></code></pre>
                     <h2 class="atx" id="扩展问题">扩展问题</h2>
                     <h3 class="atx" id="1正反lis">1.正反LIS</h3>
+                    <p></p>
                     <ul>
                         <li><a href="https://www.acwing.com/problem/content/1016/">登山</a></li>
                     </ul>
@@ -152,6 +154,7 @@
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
                     <ul>
+                        <p></p>
                         <li><a href="https://www.acwing.com/problem/content/484/">合唱队形</a></li>
                     </ul>
                     <h4 class="atx" id="题目分析-1">题目分析</h4>
