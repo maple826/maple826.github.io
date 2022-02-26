@@ -2213,6 +2213,9 @@ input, select, textarea {
 	#resource h3{
 		display: inline;
 	}
+	#resource h4{
+		display: inline;
+	}
 	#portfolio h3{
 		display: inline;
 	}
